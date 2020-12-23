@@ -133,7 +133,6 @@ def count_stair_ways(n):
 
 
 
-
 # Question 7 (Optional)
 def count_k(n, k):
     """ >>> count_k(3, 3) # 3, 2 + 1, 1 + 2, 1 + 1 + 1 

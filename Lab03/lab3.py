@@ -7,12 +7,9 @@ def lambda_curry2(func):
         return curry3
     return curry2
 
-
 curried_add = lambda_curry2(add)
 add_three = curried_add(3)
 add_three(5)
-
-
 
 
 def keep_ints(cond, n):
@@ -22,14 +19,10 @@ def keep_ints(cond, n):
             print(i)
         i += 1
 
-
 def is_even(x):
     return x % 2 == 0
 
-
 keep_ints(is_even, 5)
-
-
 
 
 def keep_ints(n):
@@ -51,9 +44,6 @@ def keep_ints(n):
     return f
 
 
-
-
-
 def and_add(f, n):
     """Return a new function. This new function takes an
     argument x and returns f(x) + n.
@@ -72,10 +62,8 @@ def and_add(f, n):
 def square(x):
     return x * x
 
-
 new_square = and_add(square, 3)
 new_square(4)
-
 
 
 a = lambda x: x * 2 + 1

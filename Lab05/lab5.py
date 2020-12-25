@@ -1,3 +1,7 @@
+
+from math import sqrt
+
+
 def if_this_not_that(i_list, this):
     """Define a function which takes a list of integers `i_list` and an integer `this`.
     For each element in `i_list`, print the element if it is larger than `this`;
@@ -15,7 +19,6 @@ def if_this_not_that(i_list, this):
             print("that")
         else:
             print(i_list[i])
-
 
 
 def couple(s1, s2):
@@ -50,8 +53,6 @@ def enumerate(s, start=0):
             new_s.append([start + i, s[i]])
     return new_s
 
-
-from math import sqrt
 
 def squares(s):
     """Returns a new list containing square roots of the elements of the original list
@@ -94,7 +95,6 @@ def flatten(lst):
     return new_list
 
 
-
 def add_chars(w1, w2):
     """
     Return a string containing the characters you need to add to w1 to get w2.
@@ -122,7 +122,6 @@ def add_chars(w1, w2):
     return add_chars(w1[1:], w2)
 
 
-
 def make_city(name, lat, lon):
     """
     >>> city = make_city('Berkeley', 0, 1)
@@ -135,6 +134,7 @@ def make_city(name, lat, lon):
     """
     return [name, lat, lon]
 
+
 def get_name(city):
     """
     >>> city = make_city('Berkeley', 0, 1)
@@ -142,6 +142,7 @@ def get_name(city):
     'Berkeley'
     """
     return city[0]
+
 
 def get_lat(city):
     """
@@ -151,6 +152,7 @@ def get_lat(city):
     """
     return city[1]
 
+
 def get_lon(city):
     """
     >>> city = make_city('Berkeley', 0, 1)
@@ -159,7 +161,7 @@ def get_lon(city):
     """
     return city[2]
 
-from math import sqrt
+
 def distance(city1, city2):
     """
     >>> city1 = make_city('city1', 0, 1)
@@ -173,8 +175,7 @@ def distance(city1, city2):
     """
     return sqrt((get_lat(city1) - get_lat(city2)) ** 2 + (get_lon(city1) - get_lon(city2)) ** 2)
 
-#
-#
+
 def closer_city(lat, lon, city1, city2):
     """
     Returns the name of either city1 or city2, whichever is closest to
@@ -196,3 +197,4 @@ def closer_city(lat, lon, city1, city2):
         return get_name(city2)
     else:
         return get_name(city1)
+
